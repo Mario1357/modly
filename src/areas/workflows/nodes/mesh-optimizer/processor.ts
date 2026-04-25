@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import path = require('path')
+import path from 'path'
 
 interface ProcessInput  { filePath?: string; text?: string }
 interface ProcessResult { filePath?: string; text?: string }
@@ -80,4 +80,4 @@ const processor = async (
   return { filePath: outPath }
 }
 
-export = processor
+export default processor

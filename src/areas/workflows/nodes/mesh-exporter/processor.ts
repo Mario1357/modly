@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import path = require('path')
-import fs   = require('fs')
+import path from 'path'
+import fs from 'fs'
 
 interface ProcessInput  { filePath?: string; text?: string }
 interface ProcessResult { filePath?: string; text?: string }
@@ -228,4 +228,4 @@ const processor = async (
   return { filePath: outPath }
 }
 
-export = processor
+export default processor
